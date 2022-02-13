@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeFit">
         <activity
+            android:name="com.project.befit.GoalsActivity"
+            android:exported="false" />
+        <activity
             android:name="com.project.befit.NutritionActivity"
             android:exported="false" />
         <activity
