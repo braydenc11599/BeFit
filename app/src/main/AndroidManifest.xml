@@ -10,43 +10,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeFit">
         <activity
-            android:name="com.project.befit.AerobicAndCardioWorkoutActivity1"
+            android:name="com.project.befitmobileapplication.AerobicAndCardioWorkoutActivity1"
             android:exported="false" />
         <activity
-            android:name="com.project.befit.HIITandCrossfitWorkoutActivity1"
+            android:name="com.project.befitmobileapplication.HIITandCrossfitWorkoutActivity1"
             android:exported="false" />
         <activity
-            android:name="com.project.befit.WeightTrainingWorkoutActivity1"
+            android:name="com.project.befitmobileapplication.WeightTrainingWorkoutActivity1"
             android:exported="false" />
         <activity
-            android:name="com.project.befit.StretchingAndBalanceActivity"
+            android:name="com.project.befitmobileapplication.StretchingAndBalanceActivity"
             android:exported="false" />
         <activity
-            android:name="com.project.befit.YogaAndPilatesActivity"
+            android:name="com.project.befitmobileapplication.YogaAndPilatesActivity"
             android:exported="false" />
         <activity
-            android:name="com.project.befit.AerobicAndCardioActivity"
+            android:name="com.project.befitmobileapplication.AerobicAndCardioActivity"
             android:exported="false" />
         <activity
-            android:name="com.project.befit.HIITAndCrossfitActivity"
+            android:name="com.project.befitmobileapplication.HIITAndCrossfitActivity"
             android:exported="false" />
         <activity
-            android:name="com.project.befit.WeightTrainingActivity"
+            android:name="com.project.befitmobileapplication.WeightTrainingActivity"
             android:exported="false" />
         <activity
-            android:name="com.project.befit.WorkoutCategoriesActivity"
+            android:name="com.project.befitmobileapplication.WorkoutCategoriesActivity"
             android:exported="false" />
         <activity
-            android:name="com.project.befit.LoginActivity"
+            android:name="com.project.befitmobileapplication.LoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.project.befit.GoalsActivity"
+            android:name="com.project.befitmobileapplication.GoalsActivity"
             android:exported="false" />
         <activity
-            android:name="com.project.befit.NutritionActivity"
+            android:name="com.project.befitmobileapplication.NutritionActivity"
             android:exported="false" />
         <activity
-            android:name="com.project.befit.MainActivity"
+            android:name="com.project.befitmobileapplication.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

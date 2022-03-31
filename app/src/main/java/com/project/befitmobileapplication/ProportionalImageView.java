@@ -1,4 +1,4 @@
-package com.project.befit;
+package com.project.befitmobileapplication;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

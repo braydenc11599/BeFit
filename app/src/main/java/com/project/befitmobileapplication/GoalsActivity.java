@@ -1,4 +1,4 @@
-package com.project.befit;
+package com.project.befitmobileapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
