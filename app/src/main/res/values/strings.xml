@@ -2,13 +2,13 @@
     <string name="app_name">BeFit</string>
 
     <string-array name="sex_array">
-        <item></item>
+        <item>Choose One:</item>
         <item>Male</item>
         <item>Female</item>
     </string-array>
 
     <string-array name="activityLevel_array">
-        <item></item>
+        <item>Choose One:</item>
         <item>Little to no exercise</item>
         <item>Light exercise (1-3 days per week)</item>
         <item>Moderate exercise (3-5 days per week)</item>

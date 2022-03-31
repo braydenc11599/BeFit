@@ -8,15 +8,13 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.befit.R;
-import com.google.firebase.auth.FirebaseAuth;
 
 public class GoalsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    Button logoutB;
-    FirebaseAuth firebaseAuth;
-    private FirebaseAuth.AuthStateListener authStateListener;
+    Button okB;
+    TextView logoutTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,25 +33,33 @@ public class GoalsActivity extends AppCompatActivity implements AdapterView.OnIt
         spinner2.setAdapter(adapter2);
         spinner2.setOnItemSelectedListener(this);
 
-        logoutB = findViewById(R.id.buttonLogout);
-        logoutB.setOnClickListener(new View.OnClickListener() {
+        logoutTV = findViewById(R.id.textViewLogout);
+        okB = findViewById(R.id.buttonOk);
+
+        logoutTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
                 Intent intToMain = new Intent(GoalsActivity.this, MainActivity.class);
                 startActivity(intToMain);
             }
         });
-    }
 
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String text = parent.getItemAtPosition(position).toString();
-        Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+        okB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intToWorkouts = new Intent(GoalsActivity.this, WorkoutCategoriesActivity.class);
+                startActivity(intToWorkouts);
+            }
+        });
     }
+        @Override
+        public void onItemSelected (AdapterView < ? > parent, View view,int position, long id){
+            String text = parent.getItemAtPosition(position).toString();
+            Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+        }
 
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-        Toast.makeText(GoalsActivity.this,"Something Went Wrong, Please Select An Item From The List",Toast.LENGTH_SHORT).show();
+        @Override
+        public void onNothingSelected (AdapterView < ? > parent){
+            Toast.makeText(GoalsActivity.this, "Something Went Wrong, Please Select An Item From The List", Toast.LENGTH_SHORT).show();
+        }
     }
-}

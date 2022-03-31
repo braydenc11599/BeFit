@@ -1,9 +1,11 @@
 package com.project.befit;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -26,10 +28,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         firebaseAuth = FirebaseAuth.getInstance();
-        emailID = findViewById(R.id.editTextTextEmailAddress);
-        password = findViewById(R.id.editTextTextPassword);
+        emailID = findViewById(R.id.editTextEmailAddress);
+        password = findViewById(R.id.editTextPassword);
         signUpB = findViewById(R.id.buttonSignUp);
         loginTV = findViewById(R.id.textViewLogin);
+
         signUpB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                             if (!task.isSuccessful()) {
                                 Toast.makeText(MainActivity.this,"Signup Unsuccessful, Please Try Again",Toast.LENGTH_SHORT).show();
                             } else {
-                                startActivity(new Intent(MainActivity.this,GoalsActivity.class));
+                                startActivity(new Intent(MainActivity.this, WorkoutCategoriesActivity.class));
                             }
                         }
                     });
@@ -68,5 +71,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }

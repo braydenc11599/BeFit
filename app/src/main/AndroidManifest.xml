@@ -10,6 +10,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeFit">
         <activity
+            android:name="com.project.befit.AerobicAndCardioWorkoutActivity1"
+            android:exported="false" />
+        <activity
+            android:name="com.project.befit.HIITandCrossfitWorkoutActivity1"
+            android:exported="false" />
+        <activity
+            android:name="com.project.befit.WeightTrainingWorkoutActivity1"
+            android:exported="false" />
+        <activity
+            android:name="com.project.befit.StretchingAndBalanceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.project.befit.YogaAndPilatesActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.project.befit.AerobicAndCardioActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.project.befit.HIITAndCrossfitActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.project.befit.WeightTrainingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.project.befit.WorkoutCategoriesActivity"
+            android:exported="false" />
+        <activity
             android:name="com.project.befit.LoginActivity"
             android:exported="false" />
         <activity
