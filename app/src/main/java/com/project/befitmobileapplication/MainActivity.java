@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                             if (!task.isSuccessful()) {
                                 Toast.makeText(MainActivity.this,"Signup Unsuccessful, Please Try Again",Toast.LENGTH_SHORT).show();
                             } else {
-                                startActivity(new Intent(MainActivity.this, WorkoutCategoriesActivity.class));
+                                startActivity(new Intent(MainActivity.this, GoalsActivity.class));
                             }
                         }
                     });
