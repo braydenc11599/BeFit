@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="befit_dark_background">#252222</color>
     <color name="befit_red">#F44336</color>
+    <color name="befit_gray">#FFA6A6A6</color>
 </resources>
