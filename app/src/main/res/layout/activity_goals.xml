@@ -12,7 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calorie Calculator"
-        android:textColor="@color/white"
+        android:textColor="@color/befit_red"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/heightLabel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -113,7 +115,7 @@
         android:layout_marginBottom="320dp"
         android:background="@drawable/rounded_spinner"
         android:minHeight="48dp"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -141,7 +143,7 @@
         android:layout_marginBottom="240dp"
         android:background="@drawable/rounded_spinner"
         android:minHeight="48dp"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -170,7 +172,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/activityLevelSpinner" />
+        app:layout_constraintTop_toBottomOf="@+id/activityLevelSpinner"
+        app:layout_constraintVertical_bias="0.317" />
 
     <TextView
         android:id="@+id/textViewLogout"
